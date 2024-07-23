@@ -69,12 +69,14 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-primary {
     background-color: #007bff; /* Warna latar belakang tombol utama */
     color: #fff; /* Warna teks tombol utama */
+    border: none;
 }
 
 .button-primary:hover {
@@ -84,6 +86,7 @@ body {
 .button-secondary {
     background-color: #6c757d; /* Warna latar belakang tombol sekunder */
     color: #fff; /* Warna teks tombol sekunder */
+    border: none;
 }
 
 .button-secondary:hover {
