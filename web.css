@@ -58,3 +58,33 @@ body {
     margin-top: 20px;
     color: #777;
 }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-primary {
+    background-color: #007bff; /* Warna latar belakang tombol utama */
+    color: #fff; /* Warna teks tombol utama */
+}
+
+.button-primary:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol utama saat hover */
+}
+
+.button-secondary {
+    background-color: #6c757d; /* Warna latar belakang tombol sekunder */
+    color: #fff; /* Warna teks tombol sekunder */
+}
+
+.button-secondary:hover {
+    background-color: #5a6268; /* Warna latar belakang tombol sekunder saat hover */
+}
