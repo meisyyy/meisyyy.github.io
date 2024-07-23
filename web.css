@@ -59,7 +59,6 @@ body {
     color: #777;
 }
 
-/* Styles for buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -71,24 +70,23 @@ body {
     margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
 }
 
 .button-primary {
-    background-color: #007bff; /* Warna latar belakang tombol utama */
-    color: #fff; /* Warna teks tombol utama */
-    border: none;
+    background-color: #007bff;
+    color: #fff;
 }
 
 .button-primary:hover {
-    background-color: #0056b3; /* Warna latar belakang tombol utama saat hover */
+    background-color: #0056b3;
 }
 
 .button-secondary {
-    background-color: #6c757d; /* Warna latar belakang tombol sekunder */
-    color: #fff; /* Warna teks tombol sekunder */
-    border: none;
+    background-color: #6c757d;
+    color: #fff;
 }
 
 .button-secondary:hover {
-    background-color: #5a6268; /* Warna latar belakang tombol sekunder saat hover */
+    background-color: #5a6268;
 }
