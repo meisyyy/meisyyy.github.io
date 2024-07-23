@@ -97,7 +97,7 @@
 
         <div class="section" id="about-me">
             <h2>About Me</h2>
-            <button class="button button-primary" onclick="scrollToContent()">Go to About Me</button>
+            <button class="button button-primary" onclick="toggleContent()">Show/Hide Information</button>
             <div id="about-info" style="display: none;">
                 <p>Hello, I am Meilandria Choirun Nissa. I am a student at SMK Taruna Bhakti majoring in Computer Network and Telecommunications Engineering.</p>
                 <p>During my academic journey, I have built a strong foundation in network architecture, protocols, and security principles. Practical experience in configuring routers, switches, and implementing network infrastructure has equipped me with hands-on skills in optimizing network performance and ensuring reliability.</p>
@@ -112,7 +112,7 @@
     </div>
 
     <script>
-        function scrollToContent() {
+        function toggleContent() {
             var content = document.getElementById('about-info');
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block'; // Menampilkan konten
