@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f0f0f0; /* Warna latar belakang */
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
@@ -55,6 +55,33 @@
             margin-top: 20px;
             color: #777;
         }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: none;
+        }
+        .button-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .button-primary:hover {
+            background-color: #0056b3;
+        }
+        .button-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .button-secondary:hover {
+            background-color: #5a6268;
+        }
     </style>
 </head>
 <body>
@@ -68,68 +95,31 @@
                Address: Depok, West Java, Indonesia</p>
         </div>
 
+        <div class="section" id="about-me">
+            <h2>About Me</h2>
+            <button class="button button-primary" onclick="scrollToContent()">Go to About Me</button>
+            <div id="about-info" style="display: none;">
+                <p>Hello, I am Meilandria Choirun Nissa. I am a student at SMK Taruna Bhakti majoring in Computer Network and Telecommunications Engineering.</p>
+                <p>During my academic journey, I have built a strong foundation in network architecture, protocols, and security principles. Practical experience in configuring routers, switches, and implementing network infrastructure has equipped me with hands-on skills in optimizing network performance and ensuring reliability.</p>
+            </div>
+        </div>
 
-        
-        
-      <div class="section" id="about-me">
-    <h2>About Me</h2>
-    <button class="button button-primary" onclick="scrollToContent()">Go to About Me</button>
-    <div id="about-info" style="display: none;">
-        <p>Hello, I am Meilandria Choirun Nissa. I am a student at SMK Taruna Bhakti majoring in Computer Network and Telecommunications Engineering.</p>
-        <p>During my academic journey, I have built a strong foundation in network architecture, protocols, and security principles. Practical experience in configuring routers, switches, and implementing network infrastructure has equipped me with hands-on skills in optimizing network performance and ensuring reliability.</p>
-    </div>
-</div>
+        <!-- Other sections go here -->
 
-
-        
-        
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Uji Level</strong><br>
-                    <em>Teknik Komputer Jaringan dan Telekomunikasi</em><br>
-                    <em>SMK Taruna Bhakti</em><br>
-                    <em>12 June 2024</em><br>
-                    Assessing each student's level for grade promotion.<br>
-                    <img src="ujilevel.jpg" alt="Sertifikat Ujilevel">
-                </li>
-                <li>
-                    <strong>Bootcamp</strong><br>
-                    <em>Teknik Komputer Jaringan dan Telekomunikasi</em><br>
-                    <em>SMK Taruna Bhakti</em><br>
-                    <em>27 Dec 2023 - 28 Dec 2023</em><br>
-                    Enhancing knowledge and skills in Networking and Hosting.<br>
-                    <img src="Bootcamp.jpg" alt="Sertifikat Bootcamp">
-                </li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Network Configuration</li>
-                <li>Network Security</li>
-                <li>Router and Switch Configuration</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Languages</h2>
-            <ul>
-                <li>Indonesian: Native</li>
-                <li>English: Intermediate</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Contact Me</h2>
-            <p>Available upon request.</p>
-        </div>
-        
         <div class="footer">
             <p>© 2024 Meilandria Choirun Nissa</p>
         </div>
     </div>
+
+    <script>
+        function scrollToContent() {
+            var content = document.getElementById('about-info');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block'; // Menampilkan konten
+            } else {
+                content.style.display = 'none'; // Menyembunyikan konten
+            }
+        }
+    </script>
 </body>
 </html>
