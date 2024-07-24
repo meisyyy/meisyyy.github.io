@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('/Users/hp/Downloads/cool-css-backgrounds.jpg'); /* Pastikan path ini benar */
+    background-image: url('images/cool-css-backgrounds.jpg'); /* Pastikan path ini benar */
     background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh latar */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     background-attachment: fixed; /* Agar gambar tetap saat halaman digulir */
