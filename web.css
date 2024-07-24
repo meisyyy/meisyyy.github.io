@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -14,33 +13,27 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .header {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 .header h1 {
     color: #333;
 }
-
 .header p {
     color: #777;
     font-size: 1.1em;
 }
-
 .nav {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .nav button {
     background-color: #007bff;
     color: #fff;
@@ -49,35 +42,27 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 5px;
-    font-size: 1em;
 }
-
 .nav button:hover {
     background-color: #0056b3;
 }
-
 .section {
     display: none; /* Hides all sections by default */
     margin-bottom: 20px;
 }
-
 .section.active {
     display: block; /* Shows the active section */
 }
-
 .section h2 {
     color: #333;
 }
-
 .section ul {
     list-style-type: none;
     padding: 0;
 }
-
 .section ul li {
     margin-bottom: 5px;
 }
-
 .footer {
     text-align: center;
     margin-top: 20px;
