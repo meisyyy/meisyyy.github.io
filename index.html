@@ -90,7 +90,7 @@
         
         <div class="nav">
             <button onclick="showSection('home')">Home</button>
-            <button onclick="showSection('blog')">Blog</button>
+            <button onclick="showSection('about')">About</button>
             <button onclick="showSection('portfolio')">Portfolio</button>
         </div>
 
@@ -99,18 +99,14 @@
             <p>Here, you'll find a collection of my professional and personal projects.</p>
         </div>
 
-        <div class="section" id="blog">
+        <div class="section" id="about">
             <h2>About Me</h2>
             <p>Hello, I am Meilandria Choirun Nissa. I am a student at SMK Taruna Bhakti majoring in Teknik Komputer Jaringan dan Telekomunikasi.</p>
             <p>During my academic journey, I have built a strong foundation in network architecture, protocols, and security principles. Practical experience in configuring routers, switches, and implementing network infrastructure has equipped me with hands-on skills in optimizing network performance and ensuring reliability.</p>
-        </div>
-        
-        <div class="section" id="blog">
-            <h2>Blog</h2>
             <button onclick="showContent('experience')">Experience</button>
             <button onclick="showContent('languages')">Languages</button>
             <button onclick="showContent('references')">References</button>
-            <div id="blog-content">
+            <div id="about-content">
                 <!-- Content sections to be displayed -->
                 <div id="experience" class="section">
                     <h2>Experience</h2>
@@ -147,6 +143,11 @@
             </div>
         </div>
         
+        <div class="section" id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Welcome to my blog. Here, I share my thoughts, experiences, and insights on various topics related to my field of study and interests.</p>
+        </div>
+        
         <div class="footer">
             <p>© 2024 Meilandria Choirun Nissa XII-TJKT I</p>
         </div>
@@ -166,7 +167,7 @@
         }
 
         function showContent(contentId) {
-            var contents = document.querySelectorAll('#blog-content .section');
+            var contents = document.querySelectorAll('#about-content .section');
             contents.forEach(function(content) {
                 content.style.display = 'none';
             });
