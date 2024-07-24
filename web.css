@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #add8e6; /* Warna biru muda */
+    background-image: url('/Users/hp/Downloads/cool-css-backgrounds.jpg'); /* Pastikan path ini benar */
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh latar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Agar gambar tetap saat halaman digulir */
     margin: 0;
     padding: 0;
 }
